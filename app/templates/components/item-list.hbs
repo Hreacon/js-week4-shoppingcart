@@ -1,1 +1,9 @@
 {{yield}}
+<h1>CHECKOUT THESE ITEMS</h1>
+{{#each itemthing as |item|}}
+<li {{action 'addItem' item}}>{{item.thing}} ${{item.price}}</li>
+{{/each}}
+<h1>CART</h1>
+{{#each cart.items as |item|}}
+  <li {{action 'removeItem' item}}>{{item.thing}} ${{item.price}}</li>
+{{/each}}
