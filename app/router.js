@@ -6,7 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('view-item');
+  this.route('view-item', {path: '/view-item/:item'});
 });
 
 export default Router;

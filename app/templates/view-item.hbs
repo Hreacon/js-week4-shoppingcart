@@ -1,1 +1,7 @@
 {{outlet}}
+<h1>Here is your beautiful {{model.thing}}</h1>
+<h2>They only cost ${{model.price}}</h2>
+<h3>Would you like to add it to your cart?</h3>
+<h4 {{action 'addItem' model}}>Yes</h4>
+
+{{view-cart}}

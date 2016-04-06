@@ -9,6 +9,10 @@ export default Ember.Component.extend({
     },
     removeItem(item){
       this.get('cart').removeItem(item);
+    },
+    viewItem(item) {
+      console.log(item);
+      this.sendAction('viewItem2', item);
     }
   }
 });
