@@ -3,5 +3,8 @@
 <h2>They only cost ${{model.price}}</h2>
 <h3>Would you like to add it to your cart?</h3>
 <h4 {{action 'addItem' model}}>Yes</h4>
-
+<hr>
+{{#new-review item=model saveReview2='saveReview3'}}Save review on {{model.thing}}{{/new-review}}
+{{review-list reviews=model.reviews}}
+<hr>
 {{view-cart}}

@@ -1,0 +1,7 @@
+<h2>Reviews</h2>
+{{#each reviews as |review|}}
+  <li>{{review.title}} {{review.rating}}/10
+    <br>
+    {{review.body}}</li>
+{{/each}}
+{{yield}}

@@ -3,3 +3,4 @@
 {{#each cart.items as |item|}}
   <li {{action 'removeItem' item}}>{{item.thing}} ${{item.price}}</li>
 {{/each}}
+{{cart.total}}

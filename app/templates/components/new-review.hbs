@@ -1,0 +1,12 @@
+<h2>Add Review</h2>
+<form>
+  <label for="title">Title</label>
+  {{input value=title id="title" placeholder='WOW THIS IS AMAZING'}}
+
+  <label for="body">Body</label>
+  {{input value=body id="body" placeholder='WOW THIS IS AMAZING'}}
+
+  <label for="rating">Rating</label>
+  {{input type=number min=1 max=5 value=rating id="rating" placeholder='WOW THIS IS AMAZING'}}
+  <button {{action 'saveReview'}}>{{yield}}</button>
+</form>
